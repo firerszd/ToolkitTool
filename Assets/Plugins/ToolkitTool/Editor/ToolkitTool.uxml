@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="up" style="height: 42px; background-color: rgb(53, 53, 53); flex-direction: row;">
+        <UTReadFile style="background-color: rgb(0, 190, 255); flex-shrink: 0; flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="down" style="height: 100%; flex-direction: row; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="left" style="width: 100px; background-color: rgb(0, 190, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 60, 149); border-right-color: rgb(0, 60, 149); border-top-color: rgb(0, 60, 149); border-bottom-color: rgb(0, 60, 149);">
+            <ui:Button text="Theme" display-tooltip-when-elided="true" name="Theme" style="color: rgb(0, 164, 200); background-color: rgb(255, 133, 85); margin-top: 5px; padding-top: 1px; margin-bottom: 5px; height: 31px; -unity-background-image-tint-color: rgba(255, 255, 255, 255);" />
+            <ui:Button text="CarLight" display-tooltip-when-elided="true" name="CarLight" style="color: rgb(0, 164, 200); background-color: rgb(255, 133, 85); margin-top: 5px; padding-top: 1px; margin-bottom: 5px; height: 31px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right" style="height: 100%; background-color: rgb(255, 127, 0); width: 100%; background-image: none; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:VisualElement style="flex-direction: column; width: auto;">
+                <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" max-length="-1" name="searchText" />
+                <ui:VisualElement style="flex-direction: row; height: 30px;">
+                    <ui:Label text="时间" display-tooltip-when-elided="true" style="background-color: rgb(255, 127, 0); color: rgb(0, 190, 255); -unity-font-style: normal;" />
+                    <ui:MinMaxSlider picking-mode="Ignore" min-value="10" max-value="12" low-limit="-10" high-limit="40" name="timeSlider" style="background-color: rgb(0, 91, 123); color: rgb(255, 127, 0); font-size: 12px; width: auto; flex-shrink: 0; flex-grow: 1;" />
+                    <ui:Button text="执行" display-tooltip-when-elided="true" name="excute" style="width: 50px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" name="content" style="background-color: rgb(188, 112, 0); background-image: none; -unity-background-scale-mode: stretch-to-fill; display: none;" />
+            <ui:ListView focusable="true" name="listSource" item-height="32" text="CarLight" style="width: 100%; height: 100%; background-color: rgb(255, 127, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
